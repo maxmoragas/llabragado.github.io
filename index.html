@@ -15,7 +15,6 @@
     header {
       padding: 30px 10px;
       background-color: rgba(0, 0, 0, 0.3);
-      position: relative;
     }
     .logo-container {
       position: relative;
@@ -33,11 +32,13 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      width: 250px;
+      height: 250px;
       transform: translate(-50%, -50%);
     }
     svg {
-      width: 220px;
-      height: 220px;
+      width: 100%;
+      height: 100%;
     }
     nav {
       margin-top: 20px;
@@ -68,12 +69,12 @@
     <div class="logo-container">
       <img src="libertad.png" alt="Libertad Avanza Logo" />
       <div class="circle-text">
-        <svg viewBox="0 0 220 220">
+        <svg viewBox="0 0 250 250">
           <defs>
-            <path id="circlePath" d="M110,10 A100,100 0 1,1 109.9,10" />
+            <path id="circlePath" d="M125,25 A100,100 0 1,1 124.9,25" />
           </defs>
           <text fill="white" font-size="18px">
-            <textPath href="#circlePath" startOffset="25%">La Libertad Avanza Bragado</textPath>
+            <textPath href="#circlePath" startOffset="50%">La Libertad Avanza Bragado</textPath>
           </text>
         </svg>
       </div>
