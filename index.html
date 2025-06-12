@@ -17,28 +17,14 @@
       background-color: rgba(0, 0, 0, 0.3);
     }
     .logo-container {
-      position: relative;
-      width: 220px;
-      height: 220px;
-      margin: auto;
+      width: 250px;
+      height: auto;
+      margin: 20px auto;
     }
     .logo-container img {
       width: 100%;
-      height: 100%;
+      height: auto;
       object-fit: contain;
-      border-radius: 50%;
-    }
-    .circle-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 250px;
-      height: 250px;
-      transform: translate(-50%, -50%);
-    }
-    svg {
-      width: 100%;
-      height: 100%;
     }
     nav {
       margin-top: 20px;
@@ -67,17 +53,7 @@
 <body>
   <header>
     <div class="logo-container">
-      <img src="libertad.png" alt="Libertad Avanza Logo" />
-      <div class="circle-text">
-        <svg viewBox="0 0 250 250">
-          <defs>
-            <path id="circlePath" d="M125,25 A100,100 0 1,1 124.9,25" />
-          </defs>
-          <text fill="white" font-size="18px">
-            <textPath href="#circlePath" startOffset="50%">La Libertad Avanza Bragado</textPath>
-          </text>
-        </svg>
-      </div>
+      <img src="logo.png" alt="La Libertad Avanza Bragado Logo" />
     </div>
     <nav>
       <a href="#principal">Principal</a>
