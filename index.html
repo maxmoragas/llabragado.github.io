@@ -72,17 +72,19 @@
     /* Diseño responsivo */
     @media (max-width: 600px) {
       .sidebar {
-        left: 5px;
-        top: 10%;
-        transform: none;
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
       }
       .sidebar a {
-        width: 120px;
+        width: auto;
         font-size: 14px;
         padding: 8px;
       }
       .logo-container {
-        width: 300px; /* Se ajusta en móvil */
+        width: 300px;
       }
     }
   </style>
