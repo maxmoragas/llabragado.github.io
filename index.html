@@ -5,20 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>La Libertad Avanza Bragado</title>
   <style>
-    body {
+    * {
       margin: 0;
-      background-color: #663399; /* Fondo corregido y uniforme */
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajusta todo al alto de la pantalla */
+      background-color: #663399; /* Color corregido y uniforme */
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
     }
-    header {
-      padding: 30px 10px;
-    }
     .logo-container {
-      width: 600px;
+      width: 500px; /* Tamaño ajustado para encajar sin scroll */
       height: auto;
-      margin: 20px auto;
+      margin-bottom: 20px;
     }
     .logo-container img {
       width: 100%;
@@ -26,31 +32,25 @@
       object-fit: contain;
     }
     .welcome-text {
-      margin-top: 20px;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
       line-height: 1.5;
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
     }
     footer {
-      text-align: center;
-      padding: 15px;
       position: absolute;
-      bottom: 0;
+      bottom: 10px;
       width: 100%;
+      text-align: center;
       font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="logo.png" alt="La Libertad Avanza Bragado Logo" />
-    </div>
-  </header>
-  
+  <div class="logo-container">
+    <img src="logo.png" alt="La Libertad Avanza Bragado Logo" />
+  </div>
+
   <div class="welcome-text">
     <p>Bienvenidos a La Libertad Avanza Bragado</p>
     <p>Somos una fuerza política que cree en el mérito, la libertad y el fin de los privilegios de la casta. Queremos un Bragado con más oportunidades, menos impuestos y más respeto por el que trabaja.</p>
@@ -59,7 +59,7 @@
     <p>En Bragado, la libertad ya empezó a avanzar.</p>
     <p>¡Viva la libertad, carajo!</p>
   </div>
-  
+
   <footer>
     &copy; 2025 Libertad Avanza Bragado. Todos los derechos reservados.
   </footer>
