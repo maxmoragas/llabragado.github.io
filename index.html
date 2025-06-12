@@ -12,19 +12,41 @@
     }
     body {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Ajusta todo al alto de la pantalla */
-      background-color: #663399; /* Color corregido y uniforme */
+      height: 100vh;
+      background-color: #663399;
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
     }
+    .sidebar {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .sidebar a {
+      display: block;
+      width: 150px;
+      padding: 10px;
+      background-color: white;
+      color: #663399;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .sidebar a:hover {
+      background-color: #552288;
+      color: white;
+    }
     .logo-container {
-      width: 500px; /* Tamaño ajustado para encajar sin scroll */
+      width: 500px;
       height: auto;
-      margin-bottom: 20px;
     }
     .logo-container img {
       width: 100%;
@@ -47,6 +69,14 @@
   </style>
 </head>
 <body>
+  <div class="sidebar">
+    <a href="discapacidad.html">Discapacidad</a>
+    <a href="microbasurales.html">Microbasurales</a>
+    <a href="laguna-bragado.html">Laguna Bragado</a>
+    <a href="clubes.html">Clubes</a>
+    <a href="donaciones.html">Donaciones</a>
+  </div>
+
   <div class="logo-container">
     <img src="logo.png" alt="La Libertad Avanza Bragado Logo" />
   </div>
