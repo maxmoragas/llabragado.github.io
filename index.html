@@ -13,18 +13,18 @@
     body {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       height: 100vh;
       background-color: #663399;
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
+      padding: 20px;
     }
     .logo-container {
-      width: 300px;
+      width: 250px;
       height: auto;
-      margin-bottom: 10px;
     }
     .logo-container img {
       width: 100%;
@@ -32,23 +32,22 @@
       object-fit: contain;
     }
     .welcome-text {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       line-height: 1.4;
       max-width: 90%;
-      margin-bottom: 20px;
     }
     .button-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 20px;
+      gap: 8px;
+      margin-bottom: 10px;
     }
     .button-container a {
       display: block;
-      width: 140px;
-      padding: 10px;
+      width: 120px;
+      padding: 8px;
       background-color: white;
       color: #663399;
       font-weight: bold;
@@ -61,21 +60,19 @@
       color: white;
     }
     footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
       text-align: center;
-      font-size: 0.9em;
+      font-size: 0.8em;
+      padding: 10px;
     }
 
     /* Ajustes para pantallas grandes */
     @media (min-width: 768px) {
       .logo-container {
-        width: 500px;
+        width: 400px;
       }
       .welcome-text {
         max-width: 600px;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   </style>
