@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      background-color: rgb(102, 51, 53); /* Color de fondo corregido */
+      background-color: rgb(102, 51, 53); /* Fondo corregido */
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
@@ -17,7 +17,7 @@
       background-color: rgba(0, 0, 0, 0.3);
     }
     .logo-container {
-      width: 800px; /* Logo más grande */
+      width: 600px; /* Reducimos el tamaño del logo */
       height: auto;
       margin: 20px auto;
     }
@@ -26,23 +26,13 @@
       height: auto;
       object-fit: contain;
     }
-    nav {
-      margin-top: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
     footer {
       text-align: center;
       padding: 15px;
       background-color: rgba(0, 0, 0, 0.3);
-      margin-top: 40px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
       font-size: 0.9em;
     }
   </style>
@@ -52,9 +42,6 @@
     <div class="logo-container">
       <img src="logo.png" alt="La Libertad Avanza Bragado Logo" />
     </div>
-    <nav>
-      <a href="#contacto">Contacto</a>
-    </nav>
   </header>
   <footer>
     &copy; 2025 Libertad Avanza Bragado. Todos los derechos reservados.
