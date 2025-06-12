@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>La Libertad Avanza Bragado</title>
   <style>
     * {
@@ -21,18 +21,16 @@
       color: white;
       text-align: center;
     }
-    .sidebar {
-      position: fixed;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
+    .button-container {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 10px;
+      margin-bottom: 20px;
     }
-    .sidebar a {
+    .button-container a {
       display: block;
-      width: 150px;
+      width: 140px;
       padding: 10px;
       background-color: white;
       color: #663399;
@@ -41,14 +39,14 @@
       border-radius: 5px;
       text-align: center;
     }
-    .sidebar a:hover {
+    .button-container a:hover {
       background-color: #552288;
       color: white;
     }
     .logo-container {
-      width: 500px;
+      width: 350px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .logo-container img {
       width: 100%;
@@ -56,10 +54,10 @@
       object-fit: contain;
     }
     .welcome-text {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
-      line-height: 1.5;
-      max-width: 600px;
+      line-height: 1.4;
+      max-width: 90%;
     }
     footer {
       position: absolute;
@@ -68,29 +66,21 @@
       text-align: center;
       font-size: 0.9em;
     }
-    
-    /* Diseño responsivo */
-    @media (max-width: 600px) {
-      .sidebar {
-        position: static;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 5px;
-      }
-      .sidebar a {
-        width: auto;
-        font-size: 14px;
-        padding: 8px;
-      }
+
+    /* Ajustes para pantallas grandes */
+    @media (min-width: 768px) {
       .logo-container {
-        width: 300px;
+        width: 500px;
+      }
+      .welcome-text {
+        max-width: 600px;
+        font-size: 18px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="sidebar">
+  <div class="button-container">
     <a href="discapacidad.html">Discapacidad</a>
     <a href="microbasurales.html">Microbasurales</a>
     <a href="laguna-bragado.html">Laguna Bragado</a>
@@ -99,7 +89,7 @@
   </div>
 
   <div class="logo-container">
-    <img src="logo.png" alt="La Libertad Avanza Bragado Logo" />
+    <img src="logo.png" alt="La Libertad Avanza Bragado Logo">
   </div>
 
   <div class="welcome-text">
