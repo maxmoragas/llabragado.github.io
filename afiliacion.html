@@ -87,7 +87,7 @@
   <h2>Afíliate a La Libertad Avanza Bragado</h2>
 
   <div class="form-container">
-    <form action="procesar-afiliacion.php" method="POST">
+    <form action="https://formsubmit.co/lalibertadavanzabragado@gmail.com" method="POST">
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required>
 
@@ -97,6 +97,9 @@
       <label for="celular">Número de celular:</label>
       <input type="tel" id="celular" name="celular" required>
 
+      <!-- Redirige después de enviar -->
+      <input type="hidden" name="_next" value="afiliacion.html">
+
       <button type="submit">Enviar afiliación</button>
     </form>
   </div>
@@ -105,4 +108,3 @@
 
 </body>
 </html>
-
