@@ -8,41 +8,33 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 20px;
-            background-color: rgb(102, 51, 153); /* Color de fondo */
+            background-color: #f4f4f4;
         }
-        .logo {
-            width: 150px; /* Ajusta el tamaño si es necesario */
+        h1 {
+            color: #333;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .galeria img {
+            width: 300px;
             height: auto;
-            margin-bottom: 20px;
-        }
-        .contenedor {
-            margin-bottom: 20px;
-        }
-        img {
-            width: auto; /* Modificaremos esto más adelante según tamaño deseado */
-            height: auto;
-            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-
-    <!-- Logo en la parte superior -->
-    <img src="donaciones/logo.png" alt="Logo" class="logo">
-
-    <!-- Solo imágenes -->
-    <div class="contenedor">
-        <img src="donaciones/foto1.jpg" alt="Imagen 1">
+    <h1>Donaciones Recientes</h1>
+    <div class="galeria">
+        <img src="donaciones/futbolriver.jpg" alt="Fútbol River">
+        <img src="donaciones/verdefutbol.jpg" alt="Verde Fútbol">
+        <img src="donaciones/gacebo1.jpg" alt="Gacebo 1">
+        <img src="donaciones/gacebo2.jpg" alt="Gacebo 2">
+        <img src="donaciones/impresora501.jpg" alt="Impresora 501">
     </div>
-
-    <div class="contenedor">
-        <img src="donaciones/foto2.jpg" alt="Imagen 2">
-    </div>
-
-    <div class="contenedor">
-        <img src="donaciones/foto3.jpg" alt="Imagen 3">
-    </div>
-
 </body>
 </html>
