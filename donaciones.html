@@ -23,17 +23,57 @@
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Estilos para la ventana de imagen ampliada */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .lightbox.show {
+            display: flex;
         }
     </style>
 </head>
 <body>
     <h1>Donaciones Recibidas</h1>
     <div class="gallery">
-        <img src="futbolriver.jpg" alt="Fútbol River">
-        <img src="futbolverde.jpg" alt="Fútbol Verde">
-        <img src="gacebo1.jpg" alt="Gacebo 1">
-        <img src="gacebo2.jpg" alt="Gacebo 2">
-        <img src="impresora501.jpg" alt="Impresora 501">
+        <img src="futbolriver.jpg" alt="Fútbol River" onclick="openLightbox(this.src)">
+        <img src="futbolverde.jpg" alt="Fútbol Verde" onclick="openLightbox(this.src)">
+        <img src="gacebo1.jpg" alt="Gacebo 1" onclick="openLightbox(this.src)">
+        <img src="gacebo2.jpg" alt="Gacebo 2" onclick="openLightbox(this.src)">
+        <img src="impresora501.jpg" alt="Impresora 501" onclick="openLightbox(this.src)">
     </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Ampliación">
+    </div>
+
+    <script>
+        function openLightbox(imgSrc) {
+            document.getElementById("lightbox-img").src = imgSrc;
+            document.querySelector(".lightbox").classList.add("show");
+        }
+        function closeLightbox() {
+            document.querySelector(".lightbox").classList.remove("show");
+        }
+    </script>
 </body>
 </html>
