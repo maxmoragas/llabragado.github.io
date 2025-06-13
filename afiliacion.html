@@ -1,110 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Afiliación - La Libertad Avanza Bragado</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #663399;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .logo-container {
-      width: 250px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    .logo-container img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-    }
-    .form-container {
-      background-color: #7D4CC0; /* Púrpura más claro */
-      padding: 20px;
-      border-radius: 10px;
-      width: 300px;
-      text-align: center;
-    }
-    label {
-      font-size: 16px;
-      display: block;
-      margin-bottom: 5px;
-    }
-    input {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      border: none;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: white;
-      color: #663399;
-      font-weight: bold;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #552288;
-      color: white;
-    }
-    .back-link {
-      margin-top: 20px;
-      color: white;
-      font-size: 16px;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+<form action="https://formsubmit.co/lalibertadavanzabragado@gmail.com" method="POST">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="nombre" required>
 
-  <div class="logo-container">
-    <img src="logo.png" alt="Logo La Libertad Avanza Bragado">
-  </div>
+  <label for="apellido">Apellido:</label>
+  <input type="text" id="apellido" name="apellido" required>
 
-  <h2>Afíliate a La Libertad Avanza Bragado</h2>
+  <label for="celular">Número de celular:</label>
+  <input type="tel" id="celular" name="celular" required>
 
-  <div class="form-container">
-    <form action="https://formsubmit.co/lalibertadavanzabragado@gmail.com" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+  <!-- Redirige automáticamente al formulario después del envío -->
+  <input type="hidden" name="_next" value="https://maxmoragas.github.io/llabragado.github.io/afiliacion.html">
 
-      <label for="apellido">Apellido:</label>
-      <input type="text" id="apellido" name="apellido" required>
-
-      <label for="celular">Número de celular:</label>
-      <input type="tel" id="celular" name="celular" required>
-
-      <!-- Redirige después de enviar -->
-      <input type="hidden" name="_next" value="afiliacion.html">
-
-      <button type="submit">Enviar afiliación</button>
-    </form>
-  </div>
-
-  <a href="index.html" class="back-link">Volver a la página principal</a>
-
-</body>
-</html>
+  <button type="submit">Enviar afiliación</button>
+</form>
