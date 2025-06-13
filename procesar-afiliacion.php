@@ -12,10 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: $destinatario\r\n";
 
     if (mail($destinatario, $asunto, $mensaje, $headers)) {
-        echo "<script>alert('Afiliación enviada con éxito.'); window.location.href='afiliacion.html';</script>";
+        header("Location: afiliacion.html"); // Redirige para limpiar el formulario
+        exit();
     } else {
         echo "<script>alert('Error al enviar la afiliación.'); window.location.href='afiliacion.html';</script>";
     }
 }
 ?>
-
