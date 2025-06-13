@@ -8,35 +8,32 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: rgb(102, 51, 153);
-            color: white;
+            background-color: rgb(102, 51, 153); /* 🎨 Color de fondo ajustado */
+            padding: 20px;
+            color: white; /* Ajuste de color de texto para contraste */
         }
-        h1 {
-            margin-top: 20px;
-        }
-        .galeria {
+        .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 20px;
         }
-        .galeria img {
+        .gallery img {
             width: 300px;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <h1>Donaciones Recientes</h1>
-    <div class="galeria">
-        <img src="donaciones/futbolriver.jpg" alt="Fútbol River">
-        <img src="donaciones/verdefutbol.jpg" alt="Verde Fútbol">
-        <img src="donaciones/gacebo1.jpg" alt="Gacebo 1">
-        <img src="donaciones/gacebo2.jpg" alt="Gacebo 2">
-        <img src="donaciones/impresora501.jpg" alt="Impresora 501">
+    <h1>Donaciones Recibidas</h1>
+    <div class="gallery">
+        <img src="/futbolriver.jpg" alt="Fútbol River">
+        <img src="/verdefutbol.jpg" alt="Fútbol Verde">
+        <img src="/gacebo1.jpg" alt="Gacebo 1">
+        <img src="/gacebo2.jpg" alt="Gacebo 2">
+        <img src="/impresora501.jpg" alt="Impresora">
     </div>
 </body>
 </html>
