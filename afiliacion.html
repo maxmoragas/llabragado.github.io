@@ -2,14 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
   <title>Afiliación - La Libertad Avanza Bragado</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       display: flex;
       flex-direction: column;
@@ -20,24 +15,12 @@
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
-      padding: 20px;
-    }
-    .logo-container {
-      width: 250px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    .logo-container img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
     }
     .form-container {
       background-color: #7D4CC0;
       padding: 20px;
       border-radius: 10px;
       width: 300px;
-      text-align: center;
     }
     label {
       font-size: 16px;
@@ -65,24 +48,9 @@
       background-color: #552288;
       color: white;
     }
-    .back-link {
-      margin-top: 20px;
-      color: white;
-      font-size: 16px;
-      text-decoration: none;
-      font-weight: bold;
-      display: block;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
-
-  <div class="logo-container">
-    <img src="logo.png" alt="Logo La Libertad Avanza Bragado">
-  </div>
 
   <h2>Afíliate a La Libertad Avanza Bragado</h2>
 
@@ -97,23 +65,12 @@
       <label for="celular">Número de celular:</label>
       <input type="tel" id="celular" name="celular" required>
 
-      <!-- Redirige correctamente a la página de éxito -->
-      <input type="hidden" name="_next" value="https://maxmoragas.github.io/gracias.html">
+      <input type="hidden" name="_next" value="https://maxmoragas.github.io/llabragado.github.io/gracias.html">
+      <input type="hidden" name="_captcha" value="false"> <!-- Desactiva el captcha de FormSubmit -->
 
       <button type="submit">Enviar afiliación</button>
     </form>
   </div>
-
-  <a href="index.html" class="back-link">Volver a la página principal</a>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const form = document.querySelector("form");
-      if (document.referrer.includes("gracias.html")) {
-        setTimeout(() => { form.reset(); }, 300);
-      }
-    });
-  </script>
 
 </body>
 </html>
