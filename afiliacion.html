@@ -33,7 +33,7 @@
       object-fit: contain;
     }
     .form-container {
-      background-color: #7D4CC0; /* Púrpura más claro */
+      background-color: #7D4CC0;
       padding: 20px;
       border-radius: 10px;
       width: 300px;
@@ -97,8 +97,9 @@
       <label for="celular">Número de celular:</label>
       <input type="tel" id="celular" name="celular" required>
 
-      <!-- Redirige al formulario después del envío -->
-      <input type="hidden" name="_next" value="afiliacion.html">
+      <!-- Redirige al formulario después del envío y lo limpia -->
+      <input type="hidden" name="_next" value="afiliacion.html" />
+      <input type="hidden" name="_clear" value="true" />
 
       <button type="submit">Enviar afiliación</button>
     </form>
