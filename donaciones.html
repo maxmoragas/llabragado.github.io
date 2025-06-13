@@ -54,11 +54,11 @@
 <body>
     <h1>Donaciones Recibidas</h1>
     <div class="gallery">
-        <img src="futbolriver.jpg" alt="Fútbol River" onclick="openLightbox(this.src)">
-        <img src="futbolverde.jpg" alt="Fútbol Verde" onclick="openLightbox(this.src)">
-        <img src="gacebo1.jpg" alt="Gacebo 1" onclick="openLightbox(this.src)">
-        <img src="gacebo2.jpg" alt="Gacebo 2" onclick="openLightbox(this.src)">
-        <img src="impresora501.jpg" alt="Impresora 501" onclick="openLightbox(this.src)">
+        <img src="futbolriver.jpg" alt="Fútbol River">
+        <img src="futbolverde.jpg" alt="Fútbol Verde">
+        <img src="gacebo1.jpg" alt="Gacebo 1">
+        <img src="gacebo2.jpg" alt="Gacebo 2">
+        <img src="impresora501.jpg" alt="Impresora 501">
     </div>
 
     <!-- Lightbox -->
@@ -67,13 +67,16 @@
     </div>
 
     <script>
-        function openLightbox(imgSrc) {
-            document.getElementById("lightbox-img").src = imgSrc;
-            document.querySelector(".lightbox").classList.add("show");
-        }
-        function closeLightbox() {
-            document.querySelector(".lightbox").classList.remove("show");
-        }
+        document.querySelectorAll(".gallery img").forEach(img => {
+            img.addEventListener("click", function() {
+                document.getElementById("lightbox-img").src = this.src;
+                document.querySelector(".lightbox").classList.add("show");
+            });
+        });
+
+        document.querySelector(".lightbox").addEventListener("click", function() {
+            this.classList.remove("show");
+        });
     </script>
 </body>
 </html>
