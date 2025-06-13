@@ -97,8 +97,10 @@
       <label for="celular">Número de celular:</label>
       <input type="tel" id="celular" name="celular" required>
 
-      <!-- Redirige y limpia el formulario después del envío -->
+      <!-- Redirige al formulario después del envío -->
       <input type="hidden" name="_next" value="afiliacion.html">
+
+      <!-- Evita que los datos anteriores queden en el formulario -->
       <input type="hidden" name="_clear" value="true">
 
       <button type="submit">Enviar afiliación</button>
@@ -109,8 +111,9 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector("form");
       if (window.location.href.includes("afiliacion.html")) {
-        document.querySelector("form").reset();
+        setTimeout(() => { form.reset(); }, 100);
       }
     });
   </script>
