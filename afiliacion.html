@@ -97,9 +97,8 @@
       <label for="celular">Número de celular:</label>
       <input type="tel" id="celular" name="celular" required>
 
-      <!-- Redirige correctamente y limpia el formulario después del envío -->
-      <input type="hidden" name="_next" value="https://maxmoragas.github.io/afiliacion.html">
-      <input type="hidden" name="_clear" value="true">
+      <!-- Redirige correctamente a la página de éxito -->
+      <input type="hidden" name="_next" value="https://maxmoragas.github.io/gracias.html">
 
       <button type="submit">Enviar afiliación</button>
     </form>
@@ -110,8 +109,8 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const form = document.querySelector("form");
-      if (window.location.search.includes("_next") || window.location.href.includes("afiliacion.html")) {
-        setTimeout(() => { form.reset(); }, 200);
+      if (document.referrer.includes("gracias.html")) {
+        setTimeout(() => { form.reset(); }, 300);
       }
     });
   </script>
